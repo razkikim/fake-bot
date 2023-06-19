@@ -12,8 +12,9 @@
 }
 
 .container {
-    width: 500px;
+    width: 90%;
     margin: 0 auto;
+    max-width: 500px;
 }
 
 .wrapper {
@@ -36,6 +37,7 @@ input {
     counter-reset: #2222;
     padding: 16px;
     font-size: 24px;
+    width: 100%;
 }
 
 button {
@@ -87,6 +89,7 @@ button:hover {
     -o-border-radius: 50%;
     animation: spin infinite linear .8s;
     -webkit-animation: spin infinite linear .8s;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes spin {
