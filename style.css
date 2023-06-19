@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@1,600&family=Quicksand:wght@400;500;600;700&family=Silkscreen&display=swap');
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson';
+    /* background-image: url(assets/pexels-david-bartus-1166209.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 325px;
+    justify-content: center;
+}
+
+.content {
+    margin: 6px
+}
+
+input {
+    border: none;
+    margin-top: 10px;
+    background-color: #eaeaea;
+    counter-reset: #2222;
+    padding: 16px;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    background-color: deepskyblue;
+    font-size: 24px;
+    padding: 16px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #333333;
+    transition: .5s all ease-in-out;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -ms-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pertanyaan {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#loader {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    z-index: 9;
+    border-top: 15px solid lightseagreen;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: spin infinite linear .8s;
+    -webkit-animation: spin infinite linear .8s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+}
+
+    100% {
+        transform: rotate(360deg);
+}
+}
