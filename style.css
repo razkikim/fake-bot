@@ -101,3 +101,9 @@ button:hover {
         transform: rotate(360deg);
 }
 }
+
+@media screen and (min-width: 325px) {
+    #loader {
+        left: 37%;
+    }
+}
